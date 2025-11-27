@@ -91,10 +91,12 @@ h1 {
 .action-btn:active {
     transform: scale(0.98);
 }
+
 .reset-btn {
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
+    top: auto;
     background: none;
     border: none;
     color: var(--text-color);
@@ -109,4 +111,38 @@ h1 {
 .reset-btn:hover {
     opacity: 1;
     color: #ff4444;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .image-container {
+        width: 240px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .counter-display {
+        font-size: 4rem;
+        margin: 10px 0;
+    }
+
+    .action-btn {
+        padding: 15px 50px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .reset-btn {
+        bottom: 15px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
+        text-align: center;
+    }
 }
